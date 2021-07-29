@@ -1,10 +1,9 @@
-import phases from "./phases";
-
 export default [
   {
-    'test_id': '101afc26-e66f-11eb-ba80-0242ac130004',
-    'phases': phases,
-    'current_phase_index': 1,
-    'current_phase_substate': 'In Progress'
+    id: 'Alpha',
+    testId: '101afc26-e66f-11eb-ba80-0242ac130004',
+    currentPhaseIndex: 1,
+    currentPhaseSubstate: 'In Progress Yo!',
+    phaseIds: ['Mark', 'Billy', 'Karen']
   }
 ]

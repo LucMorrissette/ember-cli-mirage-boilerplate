@@ -2,5 +2,17 @@
 
 <p data-test-id='message'>The user's name is <strong>{{this.model.user.name}}</strong></p>
 
-<p>My Issue:</p>
-{{log this.model.scan_phase}}
+Scan Phase
+<ul>
+  <li>ID: {{this.model.scanPhase.id}}</li>
+  <li>current phase index: {{this.model.scanPhase.currentPhaseIndex}}</li>
+  <li>substate: {{this.model.scanPhase.currentPhaseSubstate}}</li>
+  <li>Phases (Total {{this.model.scanPhase.phases.length}})</li>
+  <ul>
+    {{#each this.model.scanPhase.phases as |phase|}}
+      <li><b>{{phase.id}}</b> - {{phase.phaseName}}</li>
+    {{else}}
+      <li><b>NO PHASES EXIST</b></li>
+    {{/each}}
+  </ul>
+</ul>

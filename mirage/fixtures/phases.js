@@ -1,10 +1,21 @@
 export default [
   {
-    'phase_number:': 1,
-    'phase_name:': 'Queuing'
+    id: 'Mark',
+    phaseNumber: 1,
+    phaseName: 'Queuing'
   },
   {
-    'phase_number:': 2,
-    'phase_name:': 'Translation'
+    id: 'Billy',
+    phaseNumber: 2,
+    phaseName: 'Translation'
+  },
+  {
+    id: 'Jenna',
+    phaseNumber: 2,
+    phaseName: 'Translation'
+  }, {
+    id: 'Karen',
+    phaseNumber: 2,
+    phaseName: 'Translation'
   }
 ]
